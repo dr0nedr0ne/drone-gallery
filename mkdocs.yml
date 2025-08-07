@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: Websait
+site_url: http://n-grieger.github.io/website
+theme:
+  name: material
+
+  features:
+#    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+
+plugins:
+  - search
+  - glightbox
+  - mkdocs-video:
+      is_video: True
+      video_autoplay: False
+      # video_muted: True
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+# Page tree
+nav:
+  - Drone Gallery: index.md
